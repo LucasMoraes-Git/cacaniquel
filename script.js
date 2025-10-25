@@ -5,10 +5,10 @@ const t3 = document.getElementById("texto3")
 const t4 = document.getElementById("texto4")
 
 
-const som1 = new Audio("/som_derrota.mp3")
-const som2 = new Audio("/game_over.mp3")
-const som3 = new Audio("/som_vitoria.mp3")
-const som4 = new Audio("/som_girando_mod.mp3")
+const som1 = new Audio("sons/som_derrota.mp3")
+const som2 = new Audio("sons/game_over.mp3")
+const som3 = new Audio("sons/som_vitoria.mp3")
+const som4 = new Audio("sons/som_girando_mod.mp3")
 let vitorias = 0
 let derrotas = 0
 let jogos = 0
@@ -240,6 +240,7 @@ btnSortear.addEventListener("click", () =>
     retornaResultadoSorteio(textoVitoria)
     jogos++
 })
+
 
 
 
