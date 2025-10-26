@@ -95,7 +95,7 @@ function contornaAteAcharNumero(numeroProcurado, listaContornada, texto, tempo)
     let i = 0
     let j = 0;
     let achou = false
-    let limite = configuraRandom(3, 6)
+    let limite = configuraRandom(4, 7)
 
     return new Promise((resolve) =>
     {
@@ -136,9 +136,9 @@ function retornaSimbolos()
 async function girar(arrayNumbers)
 {
     const simbolos = retornaSimbolos()
-    let tempo1 = configuraRandom(300, 600)
-    let tempo2 = configuraRandom(300, 600)
-    let tempo3 = configuraRandom(300, 600)
+    let tempo1 = configuraRandom(100, 250)
+    let tempo2 = configuraRandom(100, 250)
+    let tempo3 = configuraRandom(100, 250)
     await Promise.all([contornaAteAcharNumero(arrayNumbers[0], simbolos, t2, tempo1), contornaAteAcharNumero(arrayNumbers[1], simbolos, t3, tempo2), contornaAteAcharNumero(arrayNumbers[2], simbolos, t4, tempo3)])
 }
 
@@ -240,6 +240,7 @@ btnSortear.addEventListener("click", () =>
     retornaResultadoSorteio(textoVitoria)
     jogos++
 })
+
 
 
 
