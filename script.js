@@ -194,7 +194,7 @@ async function retornaResultadoSorteio(texto)
 {
     let arrayNumbers = []
 
-    let manipulacao = (configuraRandom(0, 10) >= 3 && jogos < 2) ? true : false
+    let manipulacao = (configuraRandom(0, 10) >= 2 && jogos < 1) ? true : false
     if(manipulacao)
     {
         simbolo = retornaSimbolos()[configuraRandom(0, retornaSimbolos().length - 1)]
@@ -240,6 +240,7 @@ btnSortear.addEventListener("click", () =>
     retornaResultadoSorteio(textoVitoria)
     jogos++
 })
+
 
 
 
